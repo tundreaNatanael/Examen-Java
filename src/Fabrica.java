@@ -63,10 +63,27 @@ public class Fabrica {
 	}
 	
 	//methods
+	public void addClient(Client newClient) {
+		boolean exists = false;
+		for(Client client: clienti)
+			if(client.equals(newClient)) {
+				exists = true;
+				break;
+			}
+		
+		if(!exists)
+			clienti.add(newClient);
+	}
 	public void addAngajat(Angajat newAngajat) {
+		boolean exists = false;
 		for(Angajat angajat: angajati)
-			if(angajat.equals(newAngajat))
-				angajati.add(angajat);
+			if(angajat.equals(newAngajat)) {
+				exists = true;
+				break;
+			}
+		
+		if(!exists)
+			angajati.add(newAngajat);
 	}
 	
 	public void concediereAngajat(Angajat angajat) {

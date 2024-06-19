@@ -18,7 +18,7 @@ public abstract class Persoana {
 	}
 	
 	public String toString() {
-		return getNume() + " " + getPrenume() + "(" + this.getClass().getName() + ")";
+		return getNume() + " " + getPrenume() + " (" + this.getClass().getName() + ")";
 	}
 	
 	public boolean equals(Persoana persoana) {

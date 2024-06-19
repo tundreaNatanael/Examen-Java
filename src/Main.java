@@ -8,6 +8,13 @@ public class Main {
 		fabrica.addAngajat(new Manager("Gica", "Hagi", 100000F));
 		
 		fabrica.printAngajatiActivi();
+		
+		fabrica.addClient(new Client("Gica", "Popescu"));
+		fabrica.addClient(new Client("Mac", "Nura"));
+		fabrica.addClient(new Client("Microsoft", "gates"));
+		
+		fabrica.printClienti();
+		
 
 	}
 
