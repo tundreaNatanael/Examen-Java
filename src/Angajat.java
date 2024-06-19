@@ -1,3 +1,4 @@
+import java.util.TreeMap;
 
 public abstract class Angajat extends Persoana {
 
@@ -45,5 +46,9 @@ public abstract class Angajat extends Persoana {
 			return  newSalar;
 		else
 			return calculareSalar(newSalar + newSalar/10, newVechime-1);
+	}
+	
+	public FluturasSalariu emiteFluturasSalar(TreeMap<Integer, Act> acte) throws EmitereSalarRefuzataException{
+		return new FluturasSalariu(acte, this);
 	}
 }

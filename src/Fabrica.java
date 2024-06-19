@@ -63,6 +63,9 @@ public class Fabrica {
 	}
 	
 	//methods
+	public void addAct(Act newAct) {
+		acte.put(newAct.getID(), newAct);
+	}
 	public void addClient(Client newClient) {
 		boolean exists = false;
 		for(Client client: clienti)
@@ -96,6 +99,10 @@ public class Fabrica {
 	
 	public void printClienti() {
 		System.out.println(toStringClienti());
+	}
+	
+	public void printActe() {
+		System.out.println(toStringActe());
 	}
 
 }

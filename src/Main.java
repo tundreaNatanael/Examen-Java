@@ -14,6 +14,13 @@ public class Main {
 		fabrica.addClient(new Client("Microsoft", "gates"));
 		
 		fabrica.printClienti();
+		try {
+			fabrica.addAct(fabrica.getAngajati().get(1).emiteFluturasSalar(fabrica.getActe()));
+		} catch(Exception e){
+			System.out.println("nu se poate emite salar");
+		}
+		
+		fabrica.printActe();
 		
 
 	}
